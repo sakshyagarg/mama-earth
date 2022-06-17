@@ -11,7 +11,8 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(
-        origins = {"http://localhost:4200/"}
+        origins = {"http://localhost:4200/"},
+        methods = {RequestMethod.GET, RequestMethod.DELETE, RequestMethod.POST, RequestMethod.PUT}
 )
 public class ProductController {
     @Autowired
